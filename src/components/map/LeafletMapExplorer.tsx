@@ -87,21 +87,10 @@ export const LeafletMapExplorer: React.FC<LeafletMapExplorerProps> = ({
       !isNaN(r.location.coordinates[1])
   );
 
-  // Default Bozra, Ulipur, Kurigram coordinates: 25.5891 N, 89.5935 E
-  /*
- * Default map center now covers the three key areas of the project:
- *   • Gunaigach – 25.5710, 89.5770
- *   • Ulipur (Kurigram) – 25.5775, 89.5960
- *   • Kurigram Town – 25.4567, 89.6420
- * We calculate the average point so the map is nicely centered. The MapCenterController
- * will later fit bounds to actual report markers.
- */
-const defaultCenter: [number, number] = [
-  // average latitude of the three areas
-  (25.5710 + 25.5775 + 25.4567) / 3,
-  // average longitude of the three areas
-  (89.5770 + 89.5960 + 89.6420) / 3,
-];
+  const defaultCenter: [number, number] = [
+    (25.5710 + 25.5775 + 25.4567) / 3,
+    (89.5770 + 89.5960 + 89.6420) / 3,
+  ];
 
   return (
     <div className={`relative z-10 ${className}`}>
@@ -171,8 +160,8 @@ const defaultCenter: [number, number] = [
       {/* Fixed location markers for the three key areas */}
 {[
   { name: 'Gunaigach', coords: [25.5710, 89.5770] as [number, number] },
-  { name: 'Ulipur (Kurigram)', coords: [25.5775, 89.5960] as [number, number] },
-  { name: 'Kurigram Town', coords: [25.4567, 89.6420] as [number, number] },
+  { name: 'Ulipur', coords: [25.5775, 89.5960] as [number, number] },
+  { name: 'Kurigram', coords: [25.4567, 89.6420] as [number, number] },
 ].map(loc => (
   <Marker key={loc.name} position={loc.coords}>
     <Popup>{loc.name}</Popup>

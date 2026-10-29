@@ -53,9 +53,9 @@ export const LocationPicker: React.FC<LocationPickerProps> = ({
 }) => {
   const { t, language } = useLanguage();
 
-  // Default to Bozra, Ulipur, Kurigram (25.5891 N, 89.5935 E) if none provided
+  // Default to Gunaigach, Ulipur, Kurigram if no location is provided.
   const initialPos: [number, number] =
-    latitude && longitude ? [latitude, longitude] : [25.5891, 89.5935];
+    latitude && longitude ? [latitude, longitude] : [25.5710, 89.5770];
 
   const [position, setPosition] = useState<[number, number] | null>(
     latitude && longitude ? [latitude, longitude] : null

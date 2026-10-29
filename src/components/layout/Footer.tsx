@@ -90,6 +90,9 @@ export const Footer: React.FC = () => {
 
         <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>{t('copyright')}</p>
+          <p className="text-center">
+            Developed by: Rakiullah Sarker, CSE, Pabna University Of Science and Technology
+          </p>
           <p className="flex items-center gap-1">
             Built for community empowerment with <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" />
           </p>

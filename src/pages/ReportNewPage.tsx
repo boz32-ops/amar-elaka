@@ -31,7 +31,7 @@ export const ReportNewPage: React.FC = () => {
   const [description, setDescription] = useState('');
   const [category, setCategory] = useState<string>('Road Damage');
   const [priority, setPriority] = useState<string>('Medium');
-  const [area, setArea] = useState(user?.area || 'Bozra, Ulipur');
+  const [area, setArea] = useState(user?.area || 'Gunaigach, Ulipur, Kurigram');
   const [address, setAddress] = useState('');
   const [coords, setCoords] = useState<{ latitude: number; longitude: number } | null>(null);
 

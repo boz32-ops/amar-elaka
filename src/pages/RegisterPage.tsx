@@ -16,7 +16,7 @@ export const RegisterPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [phone, setPhone] = useState('');
-  const [area, setArea] = useState('Bozra, Ulipur');
+  const [area, setArea] = useState('Gunaigach, Ulipur, Kurigram');
   const [ward, setWard] = useState('Ward 01');
   const [district, setDistrict] = useState('Kurigram');
   const [isLoading, setIsLoading] = useState(false);
@@ -133,7 +133,7 @@ export const RegisterPage: React.FC = () => {
                 value={area}
                 onChange={(e) => setArea(e.target.value)}
                 required
-                placeholder="e.g. Bozra, বজরা"
+                placeholder="e.g. Gunaigach, গুনাইগাছ"
                 className="w-full text-sm px-3 py-2.5 rounded-xl border border-slate-300 focus:border-emerald-500 focus:ring-emerald-500"
               />
             </div>

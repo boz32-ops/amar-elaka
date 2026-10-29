@@ -233,7 +233,7 @@ export const ExplorePage: React.FC = () => {
               type="text"
               value={area}
               onChange={(e) => setArea(e.target.value)}
-              placeholder="e.g. Bozra, বজরা"
+              placeholder="e.g. Gunaigach, গুনাইগাছ"
               className="w-full rounded-xl border border-slate-300 p-2 text-xs bg-white"
             />
           </div>
