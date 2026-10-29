@@ -19,6 +19,7 @@ import { ReportCard } from '../components/reports/ReportCard';
 import { LeafletMapExplorer } from '../components/map/LeafletMapExplorer';
 import { Button } from '../components/ui/Button';
 import { AdminProfileCard } from '../components/ui/AdminProfileCard';
+import { ActivitySlider } from '../components/ui/ActivitySlider';
 
 export const HomePage: React.FC = () => {
   const { t, language } = useLanguage();
@@ -270,6 +271,10 @@ export const HomePage: React.FC = () => {
           </div>
         )}
       </section>
+
+      {/* ── Community Activity Slideshow (auto-plays every 4s) ── */}
+      <ActivitySlider language={language as 'bn' | 'en'} />
+
     </div>
   );
 };
