@@ -89,19 +89,18 @@ export const LeafletMapExplorer: React.FC<LeafletMapExplorerProps> = ({
 
   // Default Bozra, Ulipur, Kurigram coordinates: 25.5891 N, 89.5935 E
   /*
- * Default map center now covers the three main areas of the project:
- *   • Bozra (central point) – 25.5891, 89.5935
- *   • Gunaigach               – 25.5710, 89.5770 (approx)
- *   • Ulipur (Kurigram)       – 25.5775, 89.5960 (approx)
- *   • Kurigram town           – 25.4567, 89.6420 (approx)
- * We calculate an average point so the map is nicely centered, and later
- * the MapCenterController will fit bounds to actual report markers.
+ * Default map center now covers the three key areas of the project:
+ *   • Gunaigach – 25.5710, 89.5770
+ *   • Ulipur (Kurigram) – 25.5775, 89.5960
+ *   • Kurigram Town – 25.4567, 89.6420
+ * We calculate the average point so the map is nicely centered. The MapCenterController
+ * will later fit bounds to actual report markers.
  */
 const defaultCenter: [number, number] = [
-  // average latitude
-  (25.5891 + 25.5710 + 25.5775 + 25.4567) / 4,
-  // average longitude
-  (89.5935 + 89.5770 + 89.5960 + 89.6420) / 4,
+  // average latitude of the three areas
+  (25.5710 + 25.5775 + 25.4567) / 3,
+  // average longitude of the three areas
+  (89.5770 + 89.5960 + 89.6420) / 3,
 ];
 
   return (

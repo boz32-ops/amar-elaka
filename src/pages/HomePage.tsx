@@ -18,6 +18,7 @@ import { SummaryCards } from '../components/dashboard/SummaryCards';
 import { ReportCard } from '../components/reports/ReportCard';
 import { LeafletMapExplorer } from '../components/map/LeafletMapExplorer';
 import { Button } from '../components/ui/Button';
+import { AdminProfileCard } from '../components/ui/AdminProfileCard';
 
 export const HomePage: React.FC = () => {
   const { t, language } = useLanguage();
@@ -186,6 +187,11 @@ export const HomePage: React.FC = () => {
             </button>
           ))}
         </div>
+      </section>
+
+      {/* ── Admin / Moderator Profile Card (dynamic fade-in) ── */}
+      <section>
+        <AdminProfileCard language={language as 'bn' | 'en'} />
       </section>
 
       {/* Trending & High Support Section */}
