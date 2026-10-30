@@ -9,6 +9,51 @@ interface Slide {
 
 const SLIDES: Slide[] = [
   {
+    src: '/mock/community-activity-1.jpeg',
+    captionBn: 'আলোচনা সভা ও কর্মশালা',
+    captionEn: 'Community discussion and workshop',
+  },
+  {
+    src: '/mock/community-activity-2.jpeg',
+    captionBn: 'স্থানীয় তরুণদের নিয়ে ক্রীড়া আয়োজন',
+    captionEn: 'Sports event with local youth',
+  },
+  {
+    src: '/mock/community-activity-3.jpeg',
+    captionBn: 'কৃষকদের মাঝে বীজ ও সার বিতরণ',
+    captionEn: 'Seed and fertilizer distribution to farmers',
+  },
+  {
+    src: '/mock/community-activity-4.jpeg',
+    captionBn: 'নারীদের নিয়ে সচেতনতামূলক সভা',
+    captionEn: 'Awareness session with local women',
+  },
+  {
+    src: '/mock/community-activity-5.jpeg',
+    captionBn: 'প্রয়োজনীয় সহায়তা পৌঁছে দেওয়া',
+    captionEn: 'Delivering assistance to someone in need',
+  },
+  {
+    src: '/mock/community-activity-6.jpeg',
+    captionBn: 'গ্রামীণ চলাচল সহজ করতে সাঁকো নির্মাণ',
+    captionEn: 'Building a footbridge to improve rural access',
+  },
+  {
+    src: '/mock/community-activity-7.jpeg',
+    captionBn: 'কৃষিজমি ও ফসল রক্ষায় মাঠপর্যায়ে কাজ',
+    captionEn: 'Field work to support farmland and crops',
+  },
+  {
+    src: '/mock/community-activity-8.jpeg',
+    captionBn: 'কৃষি উপকরণ বিতরণ',
+    captionEn: 'Distribution of agricultural supplies',
+  },
+  {
+    src: '/mock/community-activity-9.jpeg',
+    captionBn: 'স্থানীয় অবকাঠামো উন্নয়নে কাজ',
+    captionEn: 'Work to improve local infrastructure',
+  },
+  {
     src: '/mock/activity-1.jpg',
     captionBn: 'সুবিধাবঞ্চিত পরিবারের মধ্যে কাপড় বিতরণ – গুনাইগাছ, উলিপুর',
     captionEn: 'Cloth distribution among underprivileged families – Gunaigach, Ulipur',
